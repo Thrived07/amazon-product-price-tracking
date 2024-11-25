@@ -35,8 +35,8 @@ def get_price(url):
 
 def send_email(subject, body):
     """Send an email notification to the user"""
-    gmail_user = 'nani3ved@gmail.com'
-    gmail_password = 'ovsr fifd fpjw ievg'  # Use app-specific password if 2FA is enabled
+    gmail_user = 'sendermail@gmail.com'
+    gmail_password = 'khjk fjhk vkhg kgub'  # Use app-specific password if 2FA is enabled
     try:
         msg = MIMEText(body)
         msg['Subject'] = subject
@@ -90,6 +90,6 @@ def track_price(url, target_price, max_time_minutes):
 url = "https://www.amazon.in/dp/B07WMS7TWB?ref_=cm_sw_r_cp_ud_dp_X934R26YTFMGE5W66PM9_1"
 target_price = 1000.0
 max_time_minutes = 60
-user_email = "ethrivedgoud@gmail.com"
+user_email = "receivermail@gmail.com"
 
 track_price(url, target_price, max_time_minutes)
